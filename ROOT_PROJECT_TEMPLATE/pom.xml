@@ -41,10 +41,20 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <!--
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            -->
+            <!-- 也可以直接用这个 而不是 上面的 spring-boot-dependencies ，选一个就行 -->
+            <!-- spring-boot-starter-parent 是 依赖 spring-boot-dependencies 的 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
